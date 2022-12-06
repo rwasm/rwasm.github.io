@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-tsx",
+    "path": "/category/rsw",
+    "result": {"data":{"allDiscussionsJson":{"nodes":[{"node":{"title":"关于 rsw","number":4}},{"node":{"title":"Awesome rsw","number":3}}]}},"pageContext":{"category":{"name":"rsw","emoji":":lobster:","description":"wasm-pack based build tool","isAnswerable":false},"name":"rsw","nlen":1}},
+    "staticQueryHashes": ["2861350382","3138273236"]}

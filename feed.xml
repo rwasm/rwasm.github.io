@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+  <title>RSS</title>
+  <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+  <link>/</link>
+  <description>GitHub Discussions</description>
+  <item>
+  <title><![CDATA[rgd.yml]]></title>
+  <link>https://github.com/rwasm/rwasm.github.io/discussions/2</link>
+  <guid isPermaLink="false">https://github.com/rwasm/rwasm.github.io/discussions/2</guid>
+  <pubDate>2022-04-11</pubDate>
+  <description><![CDATA[<div class="highlight highlight-source-yaml notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="owner: rwasm
+repo: rwasm.github.io
+
+website:
+  logo: https://avatars.githubusercontent.com/u/77651207?s=200&amp;v=4
+  title: RSW
+  description: Webassembly resources, tools, and related blogs, etc.
+
+manifest:
+  name: RSW
+  short_name: RSW
+  start_url: /
+  background_color: &quot;#654FF0&quot;
+  theme_color: &quot;#FFFFFF&quot;
+  display: standalone
+  icon: https://avatars.githubusercontent.com/u/77651207?s=200&amp;v=4"><pre class="notranslate"><span class="pl-ent">owner</span>: <span class="pl-s">rwasm</span>
+<span class="pl-ent">repo</span>: <span class="pl-s">rwasm.github.io</span>
+
+<span class="pl-ent">website</span>:
+  <span class="pl-ent">logo</span>: <span class="pl-s">https://avatars.githubusercontent.com/u/77651207?s=200&amp;v=4</span>
+  <span class="pl-ent">title</span>: <span class="pl-s">RSW</span>
+  <span class="pl-ent">description</span>: <span class="pl-s">Webassembly resources, tools, and related blogs, etc.</span>
+
+<span class="pl-ent">manifest</span>:
+  <span class="pl-ent">name</span>: <span class="pl-s">RSW</span>
+  <span class="pl-ent">short_name</span>: <span class="pl-s">RSW</span>
+  <span class="pl-ent">start_url</span>: <span class="pl-s">/</span>
+  <span class="pl-ent">background_color</span>: <span class="pl-s"><span class="pl-pds">"</span>#654FF0<span class="pl-pds">"</span></span>
+  <span class="pl-ent">theme_color</span>: <span class="pl-s"><span class="pl-pds">"</span>#FFFFFF<span class="pl-pds">"</span></span>
+  <span class="pl-ent">display</span>: <span class="pl-s">standalone</span>
+  <span class="pl-ent">icon</span>: <span class="pl-s">https://avatars.githubusercontent.com/u/77651207?s=200&amp;v=4</span></pre></div>]]></description>
+</item>
+<item>
+  <title><![CDATA[关于 rsw]]></title>
+  <link>https://github.com/rwasm/rwasm.github.io/discussions/4</link>
+  <guid isPermaLink="false">https://github.com/rwasm/rwasm.github.io/discussions/4</guid>
+  <pubDate>2022-03-24</pubDate>
+  <description><![CDATA[<h2 dir="auto">rsw 是什么</h2>
+<p dir="auto"><strong>rsw = rs(rust) → w(wasm)</strong> - 是 Rust 与 WebAssembly 之间的桥梁工具，基于 wasm-pack 实现了开发模式下的热更新。</p>
+<h2 dir="auto">rsw vs wasm-pack</h2>
+<table role="table">
+<thead>
+<tr>
+<th>特征</th>
+<th>rsw</th>
+<th>wasm-pack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>脚手架</td>
+<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
+<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
+</tr>
+<tr>
+<td>热更新</td>
+<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
+<td><g-emoji class="g-emoji" alias="x" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji></td>
+</tr>
+<tr>
+<td>多 crate 同时构建</td>
+<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
+<td><g-emoji class="g-emoji" alias="x" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji></td>
+</tr>
+<tr>
+<td>自动安装构建产物</td>
+<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
+<td><g-emoji class="g-emoji" alias="x" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji></td>
+</tr>
+</tbody>
+</table>
+<h2 dir="auto">rsw 生态</h2>
+<ul dir="auto">
+<li><a href="https://github.com/rwasm/rsw-rs">rsw-rs</a> - 纯 Rust 实现的一个 Cli 工具，可以单独使用，与 <code class="notranslate">wasm-pack</code> 用法类似，但是 <code class="notranslate">rsw-rs</code> 支持配置文件，可以同时配置多个 <code class="notranslate">crate</code> 热更新或构建。</li>
+<li><a href="https://github.com/rwasm/vite-plugin-rsw">vite-plugin-rsw</a> - 一个 vite 插件，基于 rsw-rs 实现。可以将 rust 文件变更实时输出到浏览器，更友好的开发体验。</li>
+</ul>]]></description>
+</item>
+<item>
+  <title><![CDATA[Awesome rsw]]></title>
+  <link>https://github.com/rwasm/rwasm.github.io/discussions/3</link>
+  <guid isPermaLink="false">https://github.com/rwasm/rwasm.github.io/discussions/3</guid>
+  <pubDate>2022-03-24</pubDate>
+  <description><![CDATA[<ul dir="auto">
+<li><a href="https://github.com/rwasm/rsw-rs">rsw-rs</a> - <g-emoji class="g-emoji" alias="lobster" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f99e.png">🦞</g-emoji> wasm-pack based build tool</li>
+<li><a href="https://github.com/rwasm/vite-plugin-rsw">vite-plugin-rsw</a> - <g-emoji class="g-emoji" alias="crab" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f980.png">🦀</g-emoji> wasm-pack plugin for Vite</li>
+<li><a href="https://github.com/rwasm/learn-wasm">learn-wasm</a> - <g-emoji class="g-emoji" alias="game_die" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3b2.png">🎲</g-emoji> Learning WebAssembly</li>
+<li><a href="https://github.com/lencx/create-mpl">create-mpl</a> - <g-emoji class="g-emoji" alias="zap" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a1.png">⚡️</g-emoji> Create a project in seconds!
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="# npm 6.x
+npm init mpl@latest my-app --type wasm
+
+# npm 7+, extra double-dash is needed:
+npm init mpl@latest my-app -- --type wasm"><pre class="notranslate"><span class="pl-c"><span class="pl-c">#</span> npm 6.x</span>
+npm init mpl@latest my-app --type wasm
+
+<span class="pl-c"><span class="pl-c">#</span> npm 7+, extra double-dash is needed:</span>
+npm init mpl@latest my-app -- --type wasm</pre></div>
+</li>
+</ul>
+<hr>]]></description>
+</item>
+<item>
+  <title><![CDATA[Welcome to RSW Discussions!]]></title>
+  <link>https://github.com/rwasm/rwasm.github.io/discussions/1</link>
+  <guid isPermaLink="false">https://github.com/rwasm/rwasm.github.io/discussions/1</guid>
+  <pubDate>2022-03-24</pubDate>
+  <description><![CDATA[
+<h2 dir="auto"><g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji> Welcome!</h2>
+<p dir="auto">We’re using Discussions as a place to connect with other members of our community. We hope that you:</p>
+<ul dir="auto">
+<li>Ask questions you’re wondering about.</li>
+<li>Share ideas.</li>
+<li>Engage with other community members.</li>
+<li>Welcome others and are open-minded. Remember that this is a community we<br>
+build together <g-emoji class="g-emoji" alias="muscle" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png">💪</g-emoji>.</li>
+</ul>
+<p dir="auto">To get started, comment below with an introduction of yourself and tell us about what you do with this community.</p>
+]]></description>
+</item>
+
+</channel>
+</rss>
